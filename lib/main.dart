@@ -11,7 +11,6 @@ import 'package:flutter/services.dart';
 import 'package:nav_router/nav_router.dart';
 
 import 'core/app/app.dart';
-import 'ui/counter_observer.dart';
 
 Future<void> main() async {
   await init();
@@ -23,7 +22,6 @@ Future<void> main() async {
     );
     BlocOverrides.runZoned(
       () => runApp(const MyApp()),
-      blocObserver: CounterObserver(),
     );
   // });
 }
